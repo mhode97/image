@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض الصورة</title>
+    <style>
+        /* إزالة الهوامش الافتراضية للمتصفح */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* لمنع ظهور أشرطة التمرير */
+            background-color: #000; /* خلفية سوداء في حال تأخر تحميل الصورة */
+        }
+
+        /* تنسيق الحاوية لتكون بعرض وطول الشاشة */
+        .full-screen-img {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* جعل الصورة تغطي المساحة بالكامل */
+        img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover; /* لضمان ملء الشاشة مع الحفاظ على الأبعاد */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="full-screen-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWhMc3AOzgY-3Q3Gszv56IBMUBlyEJw--bbQ&s" alt="Background Image">
+    </div>
+
+</body>
+</html>
